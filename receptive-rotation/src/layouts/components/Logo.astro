@@ -18,22 +18,24 @@ const {
 ---
 
 <a href="/" class="navbar-brand block">
-  {
-    src || logo ? (
-      <Image
-        width={logo_width.replace("px", "") * 2}
-        height={logo_height.replace("px", "") * 2}
-        src={src ? src : logo}
-        alt={title}
-        style={{
-          height: logo_height.replace("px", "") + "px",
-          width: logo_width.replace("px", "") + "px",
-        }}
-      />
-    ) : logo_text ? (
-      logo_text
-    ) : (
-      title
-    )
-  }
+  <div class="flex items-center space-x-2">
+    {
+      (src || logo) && (
+        <Image
+          width={logo_width.replace("px", "") * 2}
+          height={logo_height.replace("px", "") * 2}
+          src={src ? src : logo}
+          alt={title}
+          style={{
+            height: logo_height.replace("px", "") + "px",
+            width: logo_width.replace("px", "") + "px",
+          }}
+          class="object-contain"
+        />
+      )
+    }
+    <span class="text-xl font-bold">
+      <span class="text-black">Service</span> <span class="text-primary">Claw</span>
+    </span>
+  </div>
 </a>

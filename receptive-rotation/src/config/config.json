@@ -5,9 +5,9 @@
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/serviceclaw_logo.png",
-    "logo_width": "147",
-    "logo_height": "31",
+    "logo": "/images/serviceclaw_header_logo.png",
+    "logo_width": "45px",
+    "logo_height": "45px",
     "logo_text": "Service Claw"
   },
   "settings": {
