@@ -1,0 +1,42 @@
+{
+  "site": {
+    "title": "ServiceClaw",
+    "base_url": "https://serviceclaw.com",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/openclaw_logo.png",
+    "logo_width": "147",
+    "logo_height": "31",
+    "logo_text": "ServiceClaw"
+  },
+  "settings": {
+    "pagination": 6,
+    "summary_length": 100
+  },
+  "google_tag_manager": {
+    "enable": false,
+    "gtm_id": "GTM-XXXXXX"
+  },
+  "call_to_action": {
+    "title": "Deploy OpenClaw Securely and Fast",
+    "description": "ServiceClaw helps you securely and fast deploy and use OpenClaw to achieve business targets.",
+    "button": {
+      "label": "Get Started",
+      "link": "/contact"
+    }
+  },
+  "params": {
+    "footer_description": "We help clients securely and fast deploy and use OpenClaw to achieve business targets.",
+    "email": "contact@serviceclaw.com",
+    "location": "123 Tech Avenue, Innovation City",
+    "phone": "+1-555-0123",
+    "contact_form_action": "#",
+    "copyright": "Copyright © 2026 ServiceClaw"
+  },
+  "metadata": {
+    "meta_author": "ServiceClaw",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "ServiceClaw - Deploy OpenClaw Securely and Fast"
+  }
+}

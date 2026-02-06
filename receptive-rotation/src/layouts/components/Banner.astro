@@ -1,0 +1,43 @@
+---
+import { markdownify } from "@/lib/utils/textConverter";
+import { Image } from "astro:assets";
+const { banner } = Astro.props;
+const { title, button, image, content } = banner;
+---
+
+<section class="section banner relative overflow-hidden">
+  <div class="container relative z-10">
+    <div class="row items-center">
+      <div class="lg:col-6">
+        <h1 class="banner-title" set:html={markdownify(title)} />
+
+        <p class="mt-6 text-lg" set:html={markdownify(content)} />
+
+        {
+          button.enable && (
+            <a class="btn btn-primary mt-8" href={button.link}>
+              {button.label}
+            </a>
+          )
+        }
+      </div>
+      <div class="lg:col-6 relative">
+        <!-- Glow effect behind the image - adjusted for light theme -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-radial from-primary/10 to-transparent blur-3xl -z-10"></div>
+        
+        <Image
+          class="w-full object-contain"
+          alt="banner"
+          src={image}
+          width={603}
+          height={396}
+        />
+      </div>
+    </div>
+  </div>
+  
+  <!-- Background Gradients (optional if needed globally or component specific) -->
+  <div class="absolute top-0 left-0 w-full h-full -z-1 pointer-events-none">
+     <div class="absolute top-0 left-0 w-1/2 h-1/2 bg-gradient-radial from-secondary/5 to-transparent blur-3xl opacity-50"></div>
+  </div>
+</section>
