@@ -2,7 +2,7 @@
 banner:
   title: "Secure & Fast <span class='text-gradient'>OpenClaw</span> Deployment"
   content: "We help our clients to securely and fast deploy and use <span class='text-primary'>openclaw</span> to achieve business targets."
-  image: /images/openclaw_logo.png
+  image: /images/serviceclaw_logo.png
   button:
     enable: true
     label: Start Deploying

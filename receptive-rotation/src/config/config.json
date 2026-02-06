@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "ServiceClaw",
+    "title": "Service Claw",
     "base_url": "https://serviceclaw.com",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/openclaw_logo.png",
+    "logo": "/images/serviceclaw_logo.png",
     "logo_width": "147",
     "logo_height": "31",
-    "logo_text": "ServiceClaw"
+    "logo_text": "Service Claw"
   },
   "settings": {
     "pagination": 6,
