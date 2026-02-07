@@ -26,7 +26,7 @@ key_features:
       title: Compliance Ready
       content: Meet industry standards with our pre-hardened configurations.
     - icon: "FiHeadphones" #icon package react-icons
-      title: 24/7 Support
+      title: Expert Support
       content: Expert support whenever you need it.
     - icon: "FiServer" #icon package react-icons
       title: Managed Hosting
