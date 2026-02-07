@@ -106,6 +106,27 @@ const homepageCollection = defineCollection({
         })
       )
       .optional(),
+    price_comparison: z
+      .object({
+        title: z.string(),
+        subtitle: z.string(),
+        cards: z.array(
+          z.object({
+            title: z.string(),
+            price: z.string(),
+            period: z.string(),
+            details: z.string(),
+            features: z.array(z.string()),
+            button: z.object({
+              label: z.string(),
+              link: z.string(),
+              enable: z.boolean().default(true),
+            }),
+            highlight: z.boolean().default(false),
+          })
+        ),
+      })
+      .optional(),
   }),
 });
 

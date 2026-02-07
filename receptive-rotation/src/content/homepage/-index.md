@@ -164,6 +164,41 @@ business_case_sections:
             description: "A summary is posted to the #Strategy Slack channel: \"Alert: Competitor X just raised prices by 30%.\""
             image_placeholder: "A Slack message UI showing the bot posting the alert with a \"High Priority\" emoji."
 
+price_comparison:
+  title: "Why ServiceClaw?"
+  subtitle: "Stop overpaying for manual labor. Scale faster with AI."
+  cards:
+    - title: "Traditional Sales Team"
+      price: "$150k"
+      period: "/year"
+      details: "For a team of 3 SDRs + Manager"
+      highlight: false
+      features:
+        - "Expensive Salaries & Benefits"
+        - "Slow Hiring & Training Cycles"
+        - "Limited Working Hours (9-5)"
+        - "Human Error & Inconsistency"
+        - "High Turnover Risk"
+      button:
+        label: "Calculate Your Costs"
+        link: "#"
+        enable: false
+    - title: "Managed OpenClaw"
+      price: "$12k"
+      period: "/year"
+      details: "All-inclusive fully managed AI Agents"
+      highlight: true
+      features:
+        - "Fixed, Predictable Cost"
+        - "Instant Deployment"
+        - "24/7/365 Operation"
+        - "Flawless Execution"
+        - "Scales Instantly"
+      button:
+        label: "Start Saving Today"
+        link: "/contact"
+        enable: true
+
 #testimonial
 testimonial:
   title: Trusted by Industry Leaders
