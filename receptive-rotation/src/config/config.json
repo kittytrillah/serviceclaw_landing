@@ -4,7 +4,7 @@
     "base_url": "https://serviceclaw.com",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
+    "favicon": "/images/serviceclaw_header_logo.png",
     "logo": "/images/serviceclaw_header_logo.png",
     "logo_width": "45px",
     "logo_height": "45px",
