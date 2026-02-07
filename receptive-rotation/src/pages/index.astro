@@ -3,6 +3,7 @@ import Base from "@/layouts/Base.astro";
 import Banner from "@/layouts/components/Banner.astro";
 import KeyFeatures from "@/layouts/components/KeyFeatures.astro";
 import Service from "@/layouts/components/Service.astro";
+import BusinessCases from "@/layouts/components/BusinessCases.astro";
 import Testimonial from "@/layouts/components/Testimonial.astro";
 import Cta from "@/layouts/partials/Cta.astro";
 import type { CollectionEntry } from "astro:content";
@@ -12,13 +13,14 @@ const homepage = (await getEntry(
   "homepage",
   "-index"
 )) as CollectionEntry<"homepage">;
-const { banner, key_features, service, testimonial } = homepage.data;
+const { banner, key_features, service, testimonial, business_case_sections } = homepage.data;
 ---
 
 <Base>
   <Banner banner={banner} />
   <KeyFeatures key_features={key_features} />
   <Service service={service} />
+  <BusinessCases business_case_sections={business_case_sections} />
   <Testimonial testimonial={testimonial} />
   <Cta />
 </Base>

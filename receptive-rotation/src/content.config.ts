@@ -83,6 +83,29 @@ const homepageCollection = defineCollection({
         )
         .optional(),
     }),
+    business_case_sections: z
+      .array(
+        z.object({
+          title: z.string(),
+          subtitle: z.string(),
+          layout: z.string(), // e.g., 'linear', 'card-overlay', 'split-screen', 'timeline', 'scanner', 'radar'
+          use_cases: z.array(
+            z.object({
+              title: z.string(),
+              layout: z.string(),
+              steps: z.array(
+                z.object({
+                  title: z.string(),
+                  copy: z.string(),
+                  description: z.string(),
+                  image_placeholder: z.string(),
+                })
+              ),
+            })
+          ),
+        })
+      )
+      .optional(),
   }),
 });
 
